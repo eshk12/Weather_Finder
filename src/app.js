@@ -23,7 +23,7 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Index page',
+        title: 'Weather',
         name: 'Itshak Barabie'
     })
 })
