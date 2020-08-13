@@ -9,7 +9,7 @@ const forecast = (lat,lon,callback) => {
             callback('Invalid area.',undefined)
         } else {
             const data = body.current
-            callback(undefined, "It is currently " + data.temperature + " degrees out. It feels like " + data.feelslike + " degress out.")
+            callback(undefined, "It is currently " + data.temperature + " degrees out. It feels like " + data.feelslike + " degress out. And the humidity is "+ data.humidity +".")
         }
     })
 }
